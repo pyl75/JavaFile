@@ -1,6 +1,9 @@
 package com.huida.systemother;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Properties;
 
 /**
@@ -14,7 +17,39 @@ public class systemDemo {
 	public static void main(String[] args) throws IOException {
 		//method_1();
 		//method_2();
-		Method_3();
+		//Method_3();
+		method_5();
+		method_4();
+		method_6();
+		
+	}
+
+
+	private static void method_6() {
+		// TODO Auto-generated method stub
+		Calendar c = Calendar.getInstance();
+		Date d=c.getTime();
+		System.out.println(d);
+		long date = System.currentTimeMillis();
+		Date d1 =new Date(date);
+		System.out.println(d1);
+		c.setTime(d1);
+		System.out.println(c.getTime());
+	}
+
+
+	private static void method_5() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private static void method_4() {
+		// TODO Auto-generated method stub
+		
+		Date d = new Date();
+		DateFormat df = DateFormat.getDateInstance();
+		//df = DateFormat.
 	}
 
 
